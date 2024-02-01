@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Kalam&family=Questrial&family=Ubuntu+Mono&family=Ubuntu:ital,wght@1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Questrial&family=Ubuntu+Mono&family=Ubuntu:ital,wght@1,500&display=swap');@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Ubuntu+Mono&family=Ubuntu:ital,wght@1,500&display=swap');
+html{
+    
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+    
+
+}
+.back{
+    height: 100vh;
+    background-image: url('bg\ \(6\).jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+top: 0;
+left: 0;
+
+
+isolation: isolate;
+}
+.back::after{
+    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    inset: 0;
+    background: black;
+    background-size: cover;
+    opacity: .6;
+    
+}
+
+
+nav{
+margin: auto;
+
+align-items: center;
+justify-content: center;
+height: 72px;
+
+    display: flex;
+    background-color: transparent;
+    
+
+}
+
+.navbar{
+
+    justify-content: space-between;
+}
+.right{
+    align-items: center;
+width: 50%;
+}
+.right img{
+    cursor: pointer;
+    align-items: center;
+    width: 30%;
+}
+.left{
+    
+    color: white;
+    width: 50%;
+    display: flex;
+}
+li{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+}
+li a:hover{
+    transition: .466s;
+    color: aquamarine;
+}
+li a::after{
+    content: "";
+    display: block;
+    background-color: aquamarine;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+
+}
+
+li a:hover::after{
+    width: 100%;
+    transition: width .466s;
+}
+li a{
+    font-family: 'Questrial', sans-serif;
+
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+#home{font-family: 'Barlow', sans-serif;
+
+    color: white;
+    width: 100%;
+    height: 42vh;
+    align-items: center;
+display: flex;
+flex-direction: column;
+
+}
+.quote{
+    height: 40vh;
+    align-items: center;
+}
+
+h1{
+    width: 100%;
+    margin-top: 89px;
+    font-size: 70px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.mbtn{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+button.btn{
+    background-color: rgba(127, 255, 212, 0);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+border-radius: 8px;
+width:200px;
+box-shadow: inset 0 0 0 0 aquamarine;
+    border: 2px solid aquamarine;
+   margin: 30px;font-family: 'Questrial', sans-serif;
+cursor: pointer;
+padding: 12px;
+font-weight: 700;
+
+}
+button.btn:hover{
+    box-shadow: inset 300px 0 0 0 aquamarine;
+    color: black;
+    border: 2px solid white;
+    transition: 0.9s;
+
+}
+button.btn2{
+   
+    background-color: rgba(127, 255, 212, 0);
+    color: aquamarine;
+    font-size: 30px;
+border-radius: 8px;
+    border: 2px solid rgb(255, 255, 255);
+   margin: 30px;font-family: 'Questrial', sans-serif;
+cursor: pointer;
+padding: 12px;
+width: 300px;
+box-shadow: inset 0 0 0 0 aquamarine;
+
+font-weight: 700;
+}
+button.btn2:hover{
+    box-shadow: inset 300px 0 0 0 aquamarine;
+    color: black;
+    border: 2px solid white;
+    transition: 0.6s;
+
+}
+
+#product h2{
+    font-family: 'Barlow', sans-serif;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    font-size: 78px;
+}
+.parent{
+    display: flex;
+    width: 100%;
+    height: 55vh;
+
+}
+.parent img{
+width: 50%;
+
+height: 50vh;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0);
+}
+.container2{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    background-color: rgba(255, 0, 0, 0);
+}
+.container3
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width:50%;
+    background-color: rgba(95, 40, 40, 0);
+}
+#product h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    margin: 2px;
+}
+#product button{
+
+    background-color: rgba(127, 255, 212, 0);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+border-radius: 8px;
+width:140px;
+box-shadow: inset 0 0 0 0 aquamarine;
+    border: 2px solid rgb(0, 0, 0);
+   margin-bottom: 12px ;font-family: 'Questrial', sans-serif;
+cursor: pointer;
+padding: 12px;
+font-weight: 700;
+
+}
+#product button:hover{
+    box-shadow: inset 300px 0 0 0 aquamarine;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.9s;
+
+}
+h3 a{
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-family: 'Questrial', sans-serif;
+
+}
+h3 a:hover{
+    color: rgba(0, 0, 0, 0.829);
+    transition: 0.3s;
+}
+#about h2{
+    font-family: 'Barlow', sans-serif;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    font-size: 78px;
+}
+.imp{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    height: 90vh;
+}
+.imp img{
+    height: 44vh;
+}
+.imp  .pic{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.word{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Questrial', sans-serif;
+    font-size: 25px;
+    margin-top: 50px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social i{
+justify-content: center;
+
+    padding: 10px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.74);
+    
+}
+.social i:hover{
+    color: black;
+background-color: aquamarine;
+transition: 0.4s;
+
+}
+.imp button{
+    background-color: rgba(127, 255, 212, 0);
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+border-radius: 8px;
+width:39%;
+text-decoration: underline;
+position: relative;
+box-shadow: inset 0 0 0 0 aquamarine;
+    border: 2px solid rgba(0, 0, 0, 0);
+   margin-bottom: 12px ;font-family: 'Questrial', sans-serif;
+cursor: pointer;
+padding: 4px;
+font-weight: 700;
+}
+.ex{
+    margin: auto;
+    width: 50%;
+    font-size: 17px;
+    font-family: 'Questrial', sans-serif;
+}
+#mc{
+    border: 2px solid black;
+    display: none;
+    flex-direction: row-reverse;
+    margin: auto;
+    width: 90%;
+    height: 85vh;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.075);
+
+}
+.photo{
+    display: flex;
+    width: 40%;
+    align-items: center;
+}
+.photo img{
+    width: 90%;
+    height: 70%;
+
+}
+
+#mc button{
+    background-color: rgba(127, 255, 212, 0);
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+border-radius: 8px;
+width:39%;
+text-decoration: underline;
+
+box-shadow: inset 0 0 0 0 aquamarine;
+    border: 2px solid rgba(0, 0, 0, 0);
+   margin-bottom: 12px ;font-family: 'Questrial', sans-serif;
+cursor: pointer;
+padding: 4px;
+font-weight: 700;
+}
+#two #epic h2{
+
+    font-family: 'Barlow', sans-serif;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    font-size: 78px;
+}
+form{
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    
+    font-family: 'Questrial', sans-serif;
+    align-items: center;
+}
+.inputd{
+    width: 45%;margin: 6px;
+    font-size: 15px;
+    padding: 11px;
+    border-radius: 22px;
+    border: 2px solid rgb(214, 214, 214);
+}
+form .inpute{
+    box-shadow: inset 300px 0 0 0 aquamarine;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.9s;
+    width: 17%;;margin: 8px;
+    padding: 9px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 700;
+margin-bottom: 45px;
+}
+form .inpute:hover{
+    width: 17%;;margin: 8px;
+    padding: 9px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid rgba(0, 0, 0, 0.781);
+    background-color: rgba(127, 255, 212, 0.575);
+}
+.eman{
+    display: flex;
+    font-family: 'Questrial', sans-serif;
+    height: 100%;
+}
+.picc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.picc img{
+    display: flex;
+    justify-content: center;
+    width: 64%;
+    height: 64%;
+    border-radius: 26px;
+}
+.picc li{
+    margin: 12px;
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    justify-content: center;
+
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.767);
+    color: #ffffff;
+    display: flex;
+    font-family: 'Questrial', sans-serif;
+}
+footer li{
+    list-style: none;
+    display: flex;
+    margin: 20px;
+
+    
+}
+.my{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+width: 50%;
+    display: inline-flex;
+
+}
+.my .list li:hover{
+    color: rgba(27, 228, 161, 0.692);
+    transition: 0.6s;
+    cursor: pointer;
+}
+.social2{
+    display: flex;
+    justify-content: center;
+    margin: 4px; 
+    
+}
+.social2 i{
+    margin: 4px;
+}
+.social2 i:hover{
+    /* background-color: rgb(0, 0, 0); */
+
+}
+.list{
+display: flex;
+
+width: 40%;
+justify-content: center;
+align-items: center;
+}
+.pay{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.pay h2{
+color: #ffffff;
+display: flex;
+justify-content: center;
+}
+.pay img{
+    width: 30%;
+    margin: 40px;
+    height: 20vh;
+    border-radius: 22px;
+    margin-bottom: 0px;
+    aspect-ratio: 3/2;
+object-fit: contain;
+
+}
+.pay .sp{
+    display: flex;
+
+}
