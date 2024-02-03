@@ -4,170 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChitraBytes</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="98fav.png" type="image/x-icon">
+
 </head>
 
-
 <body>
-
-    <div class="back">
-        <nav class="navbar">
-            <ul class="right"><img src="logo (2).png" alt=""></ul>
-            <ul class="left">
-                <li><a href="">Home</a></li>
-                <li><a href="#product">Product</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#epic">Contact Us</a></li>
-            </ul>
-        </nav>
-
-        <div id="home">
-            <div class="quote">
-                <h1>
-                    Art is the most beautiful of all lies....</h1>
-
-                </p>
-            </div>
-            <div class="mbtn"><button class="btn">Digital Art</button>
-                <button class="btn2">Commision Art</button>
-            </div>
-        </div>
+    <div class="main">
+        <form>
+            <div class="display">
+        <input type="text" name="display" class="text">
     </div>
-    <section id="product">
-        <h2> Featured Product<h2>
-                <div class="parent">
-                    <div class="container1">
-                        <img src="pz.png" alt="">
-                        <h1>Rs 999/-</h1>
-                        <button>Get info</button>
-                    </div>
-                    <div class="container2"><img src="pl.png" alt="">
-                        <h1>Rs 999/-</h1><button>Get info</button>
-                    </div>
-                    <div class="container3"><img src="pk.png" alt="">
-                        <h1>Rs 999/-</h1><button>Get info</button>
-                    </div>
-
-                </div>
-                </div>
-                <h3><a href="">More product....</a></h3>
-    </section>
-    <section id="about">
-        <h2>About Us</h2>
-        <div class="imp">
-            <div class="pic"><img src="about.png" alt="">
-                <div class="social"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i
-                        class="fa-regular fa-envelope"></i><i class="fa-brands fa-whatsapp"></i></div>
-            </div>
-            <div class="word">
-                <p>Welcome to Chitra'Bytes, your artistic haven based in Nepal! We specialize in commission
-                    art, offering exquisite sketches and digital artwork. While our digital collection is temporarily
-                    unavailable, stay tuned for its return. Dive into a world of anime-inspired masterpieces and explore
-                    the
-                    realm of personalized commission artwork. Established recently, Chitra'Bytes is dedicated to
-                    bringing
-                    your artistic visions to life. <a href="#mc"> <button onclick="toggle()">Show
-                            more/Hide.</button></a></p>
-            </div>
+        <div class="dot">
+            <input type="button" value="Ac"onclick="display.value = '' ">
+            <input type="button" value="De" onclick="display.value = display.value.toString().slice(0,-1)">
+            <input type="button" value="."onclick="display.value += '.' ">
+            <input type="button" value="/"onclick="display.value += '/' ">
         </div>
-        <div id="mc">
-            <div class="photo"><img src="x.jpg" alt=""></div>
-            <div class="ex">*About Chitra'Bytes:* <br>
-
-                Welcome to Chitra'Bytes, a virtual gallery of exquisite commission art and digital artwork. Based in
-                Nepal, we pride ourselves on offering a diverse range of artwork, specializing in anime-inspired pieces.
-                At Chitra'Bytes, we understand the power of art to capture emotions, tell stories, and transport you to
-                different realms.
-
-                We are passionate about connecting talented artists with art enthusiasts all over the world, allowing
-                them to explore their creativity and share their unique visions. Our curated collection showcases a
-                fusion of traditional sketch artwork and captivating digital creations. Each piece is carefully crafted
-                with skill, dedication, and attention to detail.
-
-                Our *commission art* service enables you to bring your imagination to life. Whether you're seeking a
-                personalized portrait or a unique concept, our artists are ready to transform your ideas into stunning
-                visual representations. We collaborate closely with our customers, ensuring that each commissioned
-                artwork meets their vision and exceeds expectations.
-
-                Please note that our *digital artwork* section is currently unavailable. However, we are working
-                diligently to bring it back soon, offering you an even wider range of artistic expressions. Stay tuned
-                for updates on our website and social media channels.
-
-                Chitra'Bytes is a relatively new platform, born out of our love for art and our desire to support local
-                and international talent. We are constantly expanding our artist community, discovering new talents, and
-                nurturing their growth. We value the relationship between artists and collectors, and we strive to
-                provide a seamless and enjoyable experience for both parties.
-
-                We invite you to explore our virtual gallery, browse our collection, and immerse yourself in the
-                captivating world of art. Whether you're an art lover, a collector, or looking for a unique gift,
-                Chitra'Bytes has something to offer. Join us on this creative journey and let the power of art
-                invigorate your senses.
-
-                Thank you for choosing Chitra'Bytes, and we look forward to serving you.<a href="#mc"> <button
-                        onclick="toggle()">Show more/Hide.</button></a> </div>
-        </div>
-    </section>
-    <section id="two">
-        <div id="epic">
-            <h2>Contact Us Now</h2>
+        <div class="dot">
+            <input type="button" value="7" onclick="display.value += '7' ">
+            <input type="button" value="8"onclick="display.value += '8' ">
+            <input type="button" value="9"onclick="display.value += '9' ">
+            <input type="button" value="*"onclick="display.value += '*' ">
 
         </div>
-        <div id="eman">
-            <form action="https://api.web3forms.com/submit" method="POST"> <input type="hidden" name="access_key"
-                    value="2b1374ab-362a-4111-a3b8-89f3de11668a">
+        <div class="dot">
 
-                <input type="text" name="name" placeholder="Your name" required class="inputd"><input type="tel"
-                    name="tel" placeholder="your phone number" required class="inputd"><input type="email" name="email"
-                    placeholder="Your email address" class="inputd"><textarea name="message" id="" cols="30" rows="10"
-                    placeholder="Your message" class="inputd"></textarea><button type="submit" class="inpute"
-                    c>Submit</button>
-            </form>
+        <input type="button" value="4"onclick="display.value += '4' ">
+        <input type="button" value="5"onclick="display.value += '5' ">
+        <input type="button" value="6"onclick="display.value += '6' ">
+        <input type="button" value="-"onclick="display.value += '-' ">
 
         </div>
-    </section>
-    <footer>
-        <div class="my">
-            <h1>ChitraBytes</h1>
-                
-            <span class="list">
-                <li><a href=""></a>Home</li>
-                <li><a href=""></a>Product</li>
-                <li><a href=""></a>About</li>
-                <li><a href=""></a>Contact</li>
-            </span>
-            
-            <div class="social2">
-            <i class="fa-brands fa-facebook" style="color: white;"></i><i
-                        class="fa-brands fa-instagram" style="color: white;"></i><i class="fa-regular fa-envelope"
-                        style="color: white;"></i><i class="fa-brands fa-whatsapp" style="color: white;"></i></div>
-                 
+        <div class="dot">
+            <input type="button" value="1"onclick="display.value += '1' ">
+            <input type="button" value="2"onclick="display.value += '2' ">
+            <input type="button" value="3"onclick="display.value += '3' ">
+            <input type="button" value="+"onclick="display.value += '+' ">
+
+
+
+
         </div>
-          <div class="pay">
-                <h2>We accept!</h2>
-               <span class="sp"><img src="esewa.png" alt=""><img src="khalti.png" alt=""><img src="ips.png" alt=""></span> 
-            </div>
+        <div class="dot">
+            <input type="button" value="00"onclick="display.value += '00' ">
+            <input type="button" value="0"onclick="display.value += '0' ">
+            <input type="button" value="=" onclick="display.value = eval(display.value)">
+
+
+
+
         </div>
-    </footer>
+    </form>
+    </div>
 
-    <script>
-        function toggle() {
-            var x = document.getElementById("mc");
-            if (x.style.display === "none") {
-                x.style.display = "flex";
-
-            }
-            else {
-                (x.style.display = "none")
-            }
-
-
-
-
-        }
-    </script>
 
 </body>
 
